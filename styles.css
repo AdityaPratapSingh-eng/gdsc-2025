@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+  color: #222;
+  background: #2d26262a;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(54, 46, 46, 0.8);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #e82127; /* Tesla red */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("images/hero.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  border-radius: 12px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.overlay button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  border: none;
+  background: #e82127;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.overlay button:hover {
+  transform: scale(1.05);
+  background: #c91d22;
+}
+
+/* Car Sections */
+.car {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.car h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.car img {
+  width: 80%;
+  max-width: 1000px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.car img:hover {
+  transform: scale(1.02);
+}
+
+.car p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5a6;
+  margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+  .overlay p {
+    font-size: 1rem;
+  }
+  nav ul {
+    gap: 15px;
+  }
+  .car img { width: 95%; }
+  header { padding: 12px 18px; }
+}
+
+
+
+.logos img {
+  height: 50px;        
+  width: 50px;        
+  border-radius: 50%; 
+  object-fit: cover;   
+  display: block;
+}
+

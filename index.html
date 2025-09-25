@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tesla Homepage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logos">
+       <image src="https://fabrikbrands.com/wp-content/uploads/Tesla-Logo-1.png"></image>
+    </div>
+   
+    <div class="logo">TESLA</div>
+    <nav>
+      <ul>
+        <button><li><a href="#home">Home</a></li></button>
+       <button><li><a href="#modelS">Model S</a></li></button>
+       <button><li><a href="#model3">Model 3</a></li></button>
+        <button><li><a href="#modelX">Model X</a></li></button>
+       <button><li><a href="#modelY">Model Y</a></li></button>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="overlay">
+      <h1>Drive Into the Future</h1>
+      <p>Electric Cars • Clean Energy • Innovation</p>
+      <button onclick="scrollToSection('model3')">Explore Model 3</button>
+    </div>
+  </section>
+
+  <!-- Car Sections -->
+  <section class="car" id="modelS">
+    <h2>Model S</h2>
+    <img src="images/model-s.jpg" alt="Model S" />
+    <p>Luxury, performance, and technology redefined.</p>
+  </section>
+
+  <section class="car" id="model3">
+    <h2>Model 3</h2>
+    <img src="images/model-3.jpg" alt="Model 3" />
+    <p>Affordable, stylish, and powerful electric driving.</p>
+  </section>
+
+  <section class="car" id="modelX">
+    <h2>Model X</h2>
+    <img src="images/model-x.jpg" alt="Model X" />
+    <p>Falcon-wing doors and unmatched safety features.</p>
+  </section>
+
+  <section class="car" id="modelY">
+    <h2>Model Y</h2>
+    <img src="images/model-y.jpg" alt="Model Y" />
+    <p>The versatile electric SUV for your family’s adventures.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Tesla. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
